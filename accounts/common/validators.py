@@ -30,7 +30,7 @@ class ValidateAgeForProduct:
         else:
             birthdate = birthdate_str
 
-        # Считаем возраст
+    
         today = date.today()
         age = today.year - birthdate.year - ((today.month, today.day) < (birthdate.month, birthdate.day))
 
