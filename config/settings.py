@@ -132,3 +132,7 @@ MAILERS = {
 }
 
 AUTH_USER_MODEL = 'accounts.CustomUser'
+
+SIMPLE_JWT = {
+    'TOKEN_OBTAIN_SERIALIZER': 'accounts.serializers.CustomTokenObtainPairSerializer',
+}

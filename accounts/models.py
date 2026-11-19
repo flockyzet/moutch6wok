@@ -37,6 +37,7 @@ class CustomUserManager(BaseUserManager):
 
 
 class CustomUser(AbstractBaseUser, PermissionsMixin):
+    birthdate = models.DateField(blank=True, null=True, verbose_name='дата рождения')
     email = models.EmailField(unique=True, verbose_name='электронная почта')
     phone_number = models.CharField(
         max_length=15, 
